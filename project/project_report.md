@@ -25,20 +25,19 @@ For example it could be interesting to create a feature that has buckets for the
 Also I would invest more time in the hyperparameter tuning, also changing the hyperparameters for NN models and setting the time limit higher than 1000 seconds.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-	model	      time	num_bag_folds	num_stack_levels	num_boost_round	num_leaves	                score
-0	initial	      600	8	            3	                50	            [lower=26, upper=46]	    1.80790
-1	add_features  600	8	            3	                default	        default	                    0.68603
-2	hpo	          1000	5	            2	                default	        default	                    0.60451
+model|time|num_bag_folds|num_stack_levels|num_boost_round|num_leaves|score
+--- | --- | --- | --- |--- |--- |--- 
+initial|600|8|3|50|[lower=26, upper=46]|1.80790
+add_features|600|8|3|default|default|0.68603
+hpo|1000|5|2|default|default|0.60451
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-TODO: Replace the image below with your own.
 
 ![model_train_score.png](img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
 
 ![model_test_score.png](img/model_test_score.png)
 
